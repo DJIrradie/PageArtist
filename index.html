@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Écoute-moi</title>
+
+    <!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (logos plateformes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle at top, #2b0000, #000000 70%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            padding: 32px 24px;
+        }
+
+        h1 {
+            font-family: 'Roboto', cursive;
+            font-size: 36px;
+            margin-bottom: 28px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 8px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4);
+        }
+
+        .logo {
+            max-width: 240px;
+            width: 100%;
+            margin: 0 auto 28px;
+            display: block;
+            filter: drop-shadow(0 0 20px rgba(255,0,0,0.6));
+            animation: glitchIn 1.2s ease-out both;
+        }
+
+        @keyframes glitchIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateX(0);
+                filter: blur(4px);
+            }
+            20% {
+                opacity: 1;
+                transform: translateX(-6px);
+            }
+            30% {
+                transform: translateX(6px);
+            }
+            40% {
+                transform: translateX(-4px);
+            }
+            50% {
+                transform: translateX(4px);
+            }
+            60% {
+                transform: translateX(-2px);
+            }
+            70% {
+                transform: translateX(2px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateX(0);
+                filter: blur(0);
+            }
+        }
+
+        .logo {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto 24px;
+            display: block;
+            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.6));
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 18px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+        }
+
+        .link i {
+            font-size: 20px;
+        }
+
+        .link:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 25px rgba(255,0,0,0.6);
+            filter: brightness(1.1);
+        }
+
+        .spotify { background: #1DB954; color: #000; }
+        .apple { background: #ffffff; color: #000; }
+        .deezer { background: linear-gradient(90deg, #ff0000, #ffed00, #00c7f2); color: #000; }
+        .amazon { background: #232f3e; color: #fff; }
+
+        footer {
+            margin-top: 28px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" alt="Logo DJ Irradié" class="logo">
+        <h1>Écoute-moi sur</h1>
+
+        <!-- <div class="links"> -->
+            <!-- <a class="link spotify" href="https://open.spotify.com/intl-fr/artist/6SzN8UniN4em1FO4Tue6UU?si=R4d2iuEHSQWGI3m8OR-QQA" target="_blank"> -->
+                <!-- <i class="fa-brands fa-spotify"></i> Spotify -->
+            <!-- </a> -->
+
+            <!-- <a class="link apple" href="https://music.apple.com/fr/artist/klibres300/1793799088" target="_blank"> -->
+                <!-- <i class="fa-brands fa-apple"></i> Apple Music -->
+            <!-- </a> -->
+
+            <!-- <a class="link deezer" href="https://link.deezer.com/s/32dHnWuWYN70pFTNAx124" target="_blank"> -->
+                <!-- <i class="fa-brands fa-deezer"></i> Deezer -->
+            <!-- </a> -->
+
+            <!-- <a class="link amazon" href="https://music.amazon.com/artists/B0DVSYG9CT?ref=AM4APC_AR_L_fr_FR_B0DVSYG9CT_7pKKLLA" target="_blank"> -->
+                <!-- <i class="fa-brands fa-amazon"></i> Amazon Music -->
+            <!-- </a> -->
+        <!-- </div> -->
+
+        <div class="links" style="margin-top:32px">
+            <!-- <a class="link" style="background:#e1306c;color:#fff" href="https://www.instagram.com/klibres300_officiel/" target="_blank"> -->
+                <!-- <i class="fa-brands fa-instagram"></i> Instagram -->
+            <!-- </a> -->
+			<!-- <a class="link" style="background:#3963fc;color:#fff" href="https://www.facebook.com/profile.php?id=61560305197542" target="_blank"> -->
+                <!-- <i class="fa-brands fa-facebook"></i> Facebook -->
+            <!-- </a> -->
+			<a class="link" style="background:#000000;color:#fff" href="https://www.tiktok.com/@dj.iradie?_r=1&_t=ZN-96RVeT5y3iI" target="_blank">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <!-- <a class="link" style="background:#ff0000;color:#fff" href="https://www.youtube.com/channel/UCN9seb5PNSmZcyxXP9H7UOw" target="_blank"> -->
+                <!-- <i class="fa-brands fa-youtube"></i> YouTube -->
+            <!-- </a> -->
+        </div>
+
+        <footer>
+            Scan & écoute sur ta plateforme préférée
+        </footer>
+    </div>
+
+</body>
+</html>
