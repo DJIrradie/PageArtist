@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,15 +16,24 @@
 
     <style>
         body {
-            margin: 0;
-            min-height: 100vh;
-            font-family: 'Roboto', sans-serif;
-            background: radial-gradient(circle at top, #2b0000, #000000 70%);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+    /* IMAGE DE FOND */
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("background.jpg") center center / cover no-repeat fixed;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    position: relative;
+}
 
         .container {
             text-align: center;
@@ -125,6 +135,21 @@
         .deezer { background: linear-gradient(90deg, #ff0000, #ffed00, #00c7f2); color: #000; }
         .amazon { background: #232f3e; color: #fff; }
 		.soundcloud { background: #000; color: #ffffff; }
+
+		.container {
+			text-align: center;
+			max-width: 420px;
+			width: 100%;
+			padding: 32px 24px;
+		
+			background: rgba(0,0,0,0.45);
+			backdrop-filter: blur(6px);
+		
+			border: 1px solid rgba(255,255,255,0.08);
+			border-radius: 20px;
+		
+			box-shadow: 0 0 35px rgba(0,0,0,0.6);
+		}
 
         footer {
             margin-top: 28px;
